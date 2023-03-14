@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+}
+
+header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.logo, .menu, .reg {
+    background-color: white;
+    height: 100%;
+}
+
+.container header .logo {
+    width: 15rem;
+}
+
+.container header .menu {
+    width: 50rem;
+}
+
+.container header .reg {
+    width: 20rem;
+}
+
+main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 30rem;
+    gap: 2rem;
+    padding: 1.8rem;
+}
+
+.container main .content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.container main .content .slideshow {
+    background-color: black;
+}
+
+.container main .aside {
+    background-color: black;
+}
+
+.container main .content .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.container main .content .card div {
+    background-color: black;
+}
